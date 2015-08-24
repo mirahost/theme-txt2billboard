@@ -1,0 +1,13 @@
+{
+  "collection_name": "hawaiicarrental.com",
+  "content_body": "Hello world",
+  "description": "",
+  "intro": "High Value Asset Search",
+  "meta": {
+    "status": "published"
+  },
+  "name": "Home",
+  "template": "index.html",
+  "theme": "theme-txt2billboard",
+  "title": "Text2Billboard"
+}

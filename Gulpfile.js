@@ -13,25 +13,17 @@ var dev_folder = 'dev';
 
 var path = {
     js : {
-        src : dev_folder + '/scripts/src/**/*.js',
+        src : dev_folder + '/scripts/**/*.js',
         dest : dist_folder + '/js'
     },
     scss : {
-        src : dev_folder + 'styles/scss/**/*.scss',
+        src : dev_folder + 'styles/**/*.scss',
         dest : dist_folder + '/css'
     }
 };
 
 // Fixed scripts order
 var scripts = [
-    'scripts/src/snowflakes.js',
-    'scripts/src/util.js',
-    'scripts/src/common.js',
-    'scripts/src/infiniteScroll.js',
-    'scripts/src/header.js',
-    'scripts/src/filtering.js',
-    'scripts/src/search.js',
-    'scripts/src/hotels.js'
 ];
 
 gulp.task('connect', function(){

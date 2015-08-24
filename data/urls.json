@@ -1,0 +1,17 @@
+{
+  "index" : {
+    "path": "/",
+    "method": "GET",
+    "controller": "index"
+  },
+  "content" : {
+    "path": "/content/",
+    "method": "GET",
+    "controller": "content"
+  },
+  "message" : {
+    "path": "/message/",
+    "method": "GET",
+    "controller": "message"
+  }
+}
