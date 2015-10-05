@@ -1,0 +1,52 @@
+.sidebar {
+    $offset : 30px;
+    float: left;
+    background: #414141;
+    padding-right: 15px;
+    box-shadow: -#{$offset} 10px 0 0 $color-primary;
+
+
+
+    h1 {
+        font-size: 56px;
+        text-transform: uppercase;
+        background: $color-primary;
+        color: #fff;
+        padding: 25px;
+        line-height: 1;
+        position: relative;
+        margin: -15px 0 40px -#{$offset};
+
+        &:after {
+            content: '';
+            background: #fff;
+            height: 10px;
+            width: $offset + 1;
+            position: absolute;
+            bottom: -10px;
+            left: -1px;
+        }
+    }
+
+    nav {
+        color: #fff;
+        font-size: 24px;
+        padding-right: 30px;
+
+        li {
+            margin-bottom: 30px;
+            padding-bottom: 5px;
+        }
+
+        a {
+            border-bottom: 1px solid #fff;
+            padding: 5px 5px 5px 80px;
+            display: block;
+
+            &:hover {
+                border-color: $color-primary;
+            }
+        }
+
+    }
+}

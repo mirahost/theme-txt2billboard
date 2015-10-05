@@ -1,0 +1,16 @@
+.btn {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    border: 0;
+}
+
+.btn.primary {
+    line-height: 50px;
+    border-radius: 7px;
+    background: $color-primary;
+    color: #fff;
+    padding: 0 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}

@@ -1,0 +1,37 @@
+{% include 'common/header.inc.html' %}
+    <header id="primaryHeader" style="background-image:url({{assets_img}}header_contact.jpg);">
+        <div class="inner">
+            <a href="#" id="identity">
+                <img src="{{assets_img}}identity.png" alt="txt2billboard logo">
+            </a>
+
+            {% include 'common/mainNav.inc.html' %}
+        </div>
+    </header>
+
+    <div id="content" class="messagePage">
+        <div class="inner short">
+            <div class="intro">
+                <h1>Get your message seen</h1>
+                <h2>Send a text or photo from your phone to any digital billboard, anywhere in the world.</h2>
+            </div>
+            <form action="#" id="sendMessage" method="POST">
+                <fieldset>
+                    <input type="text" placeholder="Name" name="name">
+                    <input type="text" placeholder="Phone" name="phone">
+                    <input type="text" placeholder="Email" name="email">
+                </fieldset>
+                <fieldset>
+                    <select name="location">
+                        <option value="-1">Billboard location</option>
+                        <option value="1">New York</option>
+                        <option value="2">Hawaii</option>
+                    </select>
+                    <textarea name="message" rows="6" placeholder="Message"></textarea>
+                </fieldset>
+                <button type="submit" class="btn primary alignright">Send</button>
+            </form>
+        </div>
+    </div>
+
+{% include 'common/footer.inc.html' %}

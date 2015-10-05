@@ -1,0 +1,36 @@
+@import 'settings/config';
+@import 'settings/mixin';
+
+@import 'settings/reset';
+
+
+@import 'common/header';
+@import 'common/footer';
+@import 'common/sidebar';
+
+@import 'common/forms';
+@import 'common/buttons';
+
+@import 'pages/content';
+@import 'pages/message';
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    border-top: 8px solid $color-primary;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.inner {
+    @include clearfix;
+    max-width: $wrap-width;
+    width: 100%;
+    margin: auto;
+    &.short {
+        max-width: $wrap-width-short;
+    }
+}

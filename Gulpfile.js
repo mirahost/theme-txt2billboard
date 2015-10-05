@@ -17,13 +17,15 @@ var path = {
         dest : dist_folder + '/js'
     },
     scss : {
-        src : dev_folder + 'styles/**/*.scss',
+        src : dev_folder + '/styles/**/*.scss',
         dest : dist_folder + '/css'
     }
 };
 
 // Fixed scripts order
 var scripts = [
+    dev_folder + '/scripts/fonts.js',
+    dev_folder + '/scripts/main.js'
 ];
 
 gulp.task('connect', function(){
