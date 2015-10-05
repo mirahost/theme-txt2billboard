@@ -13,4 +13,8 @@
     padding: 0 50px;
     font-weight: 500;
     text-transform: uppercase;
+
+    &.short {
+        padding: 0 20px;
+    }
 }

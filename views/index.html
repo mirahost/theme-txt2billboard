@@ -1,10 +1,38 @@
-{% include 'common/header.inc.html' %}
-    <header id="primaryHeader">
-        <a href="#" id="identity">
-            <img src="{{assets_img}}identity.png" alt="txt2billboard logo">
-        </a>
+<!doctype html>
+<html class="no-js" lang="en">
 
-        {% include 'common/mainNav.inc.html' %}
-    </header>
+    <head>
+
+        <meta charset="utf-8">
+
+        <!-- Always force latest IE rendering engine (even in intranet) -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>txt2billboard</title>
+        <meta name="author" content="Miranium" />
+        <meta name="description" content="txt2billboard website" />
+
+        <meta name="copyright" content="Miranium" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--<link rel="shortcut icon" href="favicon.ico" />-->
+
+        <link rel="stylesheet" href="{{assets_css}}main.css" />
+
+    </head>
+
+    <body class="homePage">
+
+        {% include 'common/header.inc.html' %}
+
+        <div id="content" class="inner">
+            <div id="motto">
+                <h1>Get your message seen</h1>
+                <h2>Send a text or photo from your phone to any digital billboard, anywhere in the world.</h2>
+                <a href="/message/" class="btn primary short alignright">Send Message</a>
+            </div>
+            <img src="{{assets_img}}iphone.png" alt="">
+        </div>
 
 {% include 'common/footer.inc.html' %}

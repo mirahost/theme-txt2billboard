@@ -1,14 +1,9 @@
 .messagePage {
     @include gradient( #3c4e72, $color-secondary );
 
-    .intro {
-        color: #fff;
-        font-family: $font-roboto;
-        h1 {
-            font-weight: 700;
-        }
+    #primaryHeader {
+        background-image: url('../img/header_contact.jpg');
     }
-
 }
 
 #sendMessage {

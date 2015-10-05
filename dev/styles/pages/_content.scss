@@ -1,3 +1,6 @@
+.contentPage #primaryHeader {
+    background-image: url(../img/header_content.jpg);
+}
 #content {
     padding-top: 90px;
 }
@@ -22,5 +25,19 @@
         > * {
             margin-bottom: 25px;
         }
+    }
+}
+
+
+#motto {
+    color: #fff;
+    font-family: $font-roboto;
+
+    h1 {
+        font-weight: 700;
+    }
+
+    .btn {
+        margin-top: 15px;
     }
 }
