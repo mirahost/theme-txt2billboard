@@ -433,6 +433,7 @@ th {
     font-family: $font-roboto;
     font-weight: 300;
     margin: 0;
+    line-height: 1;
   }
 }
 
@@ -445,6 +446,11 @@ h6 { font-size: 20px; }
 
 p {
   margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 nav ul {

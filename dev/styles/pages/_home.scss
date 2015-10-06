@@ -8,7 +8,7 @@
     }
 
     #content {
-        padding: 0 0 50px 0;
+        padding-bottom: 50px;
     }
 
     #motto {
@@ -25,5 +25,38 @@
             vertical-align: middle;
         }
     }
+}
 
+@include respond-from(small) {
+    .homePage {
+        #content {
+            padding-top: 0;
+        }
+
+        #motto {
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+
+            .btn {
+                display: none;
+            }
+
+            + img {
+                float: left;
+                width: 55%;
+            }
+        }
+
+        .mobileContact {
+            width: 45%;
+            float: right;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+
+            .btn {
+                margin-top: 15px;
+            }
+        }
+    }
 }

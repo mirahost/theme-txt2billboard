@@ -1,0 +1,47 @@
+body {
+    border-top: 8px solid $color-primary;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.inner {
+    @include clearfix;
+    max-width: $wrap-width;
+    width: 100%;
+    margin: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+
+    &.short {
+        max-width: $wrap-width-short;
+    }
+}
+
+#motto {
+    color: #fff;
+    font-family: $font-roboto;
+
+    h1 {
+        font-weight: 700;
+    }
+
+    .btn {
+        margin-top: 15px;
+    }
+}
+
+.mobile-only { display: none !important; }
+
+@include respond-from(small) {
+    .mobile-only { display: block !important; }
+
+    body {
+        @include gradient( #3c4e72, $color-secondary );
+        color: #fff;
+        border-top: 0;
+    }
+
+    .inner {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+}

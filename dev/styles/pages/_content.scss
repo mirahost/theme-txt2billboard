@@ -28,16 +28,18 @@
     }
 }
 
+@include respond-from(medium) {
+    .mainArea {
+        width: 63%;
+    }
+}
 
-#motto {
-    color: #fff;
-    font-family: $font-roboto;
 
-    h1 {
-        font-weight: 700;
+@include respond-from(small) {
+    .mainArea {
+        width: 100%;
+        color: #fff;
+        padding: 0 5%;
     }
 
-    .btn {
-        margin-top: 15px;
-    }
 }

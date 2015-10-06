@@ -31,3 +31,19 @@
 
     }
 }
+
+@include respond-from(small) {
+    #primaryFooter {
+        text-align: center;
+
+        nav {
+            width: 100%;
+            float: none;
+        }
+
+        .copyright {
+            float: none;
+            padding: 15px 0;
+        }
+    }
+}
