@@ -2,7 +2,7 @@
   "index" : {
     "path": "/",
     "method": "GET",
-    "controller": "index"
+    "controller": "content"
   },
   "content" : {
     "path": "/content/",
@@ -12,6 +12,6 @@
   "message" : {
     "path": "/message/",
     "method": "GET",
-    "controller": "message"
+    "controller": "content"
   }
 }
