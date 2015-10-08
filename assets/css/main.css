@@ -709,7 +709,6 @@ body {
     background-image: url("../img/header_contact.jpg"); }
 
 #sendMessage {
-  padding: 0 15px;
   margin: 60px 0;
   overflow: hidden; }
   #sendMessage fieldset > * {
