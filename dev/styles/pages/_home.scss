@@ -8,6 +8,7 @@
     }
 
     #content {
+        padding-top: 0;
         padding-bottom: 50px;
     }
 
@@ -15,7 +16,7 @@
         display: inline-block;
         vertical-align: middle;
         width: 47%;
-        margin-right: 20%;
+        margin: -15% 20% 0 0;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 
         + img {
@@ -29,9 +30,6 @@
 
 @include respond-from(small) {
     .homePage {
-        #content {
-            padding-top: 0;
-        }
 
         #motto {
             width: 80%;
