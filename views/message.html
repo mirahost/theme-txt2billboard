@@ -8,9 +8,9 @@
         <!-- Always force latest IE rendering engine (even in intranet) -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>txt2billboard</title>
+        <title>{{title}}</title>
         <meta name="author" content="Miranium" />
-        <meta name="description" content="txt2billboard website" />
+        <meta name="description" content="{{description}}" />
 
         <meta name="copyright" content="Miranium" />
 
@@ -28,8 +28,8 @@
 
         <div id="content" class="inner short">
             <div id="motto">
-                <h1>Get your message seen</h1>
-                <h2>Send a text or photo from your phone to any digital billboard, anywhere in the world.</h2>
+                <h1>{{heading}}</h1>
+                <h2>{{intro}}</h2>
             </div>
             <form action="#" id="sendMessage" method="POST">
                 <fieldset>
@@ -38,16 +38,12 @@
                     <input type="text" placeholder="Email" name="email">
                 </fieldset>
                 <fieldset>
-                    <select name="location">
-                        <option value="-1">Billboard location</option>
-                        <option value="1">New York</option>
-                        <option value="2">Hawaii</option>
-                    </select>
+                    <input type="text" placeholder="Location" name="location">
                     <textarea name="message" rows="6" placeholder="Message"></textarea>
                 </fieldset>
                 <button type="submit" class="btn primary alignright">Send</button>
             </form>
-
+            <p><small>After you submit your request we will respond promptly to confirm the location and fees.</small></p>
         </div>
 
 {% include 'common/footer.inc.html' %}
