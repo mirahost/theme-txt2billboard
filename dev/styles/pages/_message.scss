@@ -1,6 +1,6 @@
 .messagePage {
     @include gradient( #3c4e72, $color-secondary );
-
+    color: #fff;
     #primaryHeader {
         background-image: url('../img/header_contact.jpg');
     }

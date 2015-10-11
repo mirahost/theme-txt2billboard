@@ -710,7 +710,8 @@ body {
   /* Safari 5.1+, Chrome 10+ */
   background-image: -webkit-linear-gradient(#3c4e72, #264667);
   /* Opera 11.10+ */
-  background-image: -o-linear-gradient(#3c4e72, #264667); }
+  background-image: -o-linear-gradient(#3c4e72, #264667);
+  color: #fff; }
   .messagePage #primaryHeader {
     background-image: url("../img/header_contact.jpg"); }
 
