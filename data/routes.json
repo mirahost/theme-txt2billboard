@@ -4,8 +4,23 @@
     "method": "GET",
     "controller": "content"
   },
-  "content" : {
-    "path": "/content/",
+  "about" : {
+    "path": "/about/",
+    "method": "GET",
+    "controller": "content"
+  },
+  "faqs" : {
+    "path": "/faqs/",
+    "method": "GET",
+    "controller": "content"
+  },
+  "terms" : {
+    "path": "/terms-of-service/",
+    "method": "GET",
+    "controller": "content"
+  },
+  "locations" : {
+    "path": "/locations/",
     "method": "GET",
     "controller": "content"
   },
