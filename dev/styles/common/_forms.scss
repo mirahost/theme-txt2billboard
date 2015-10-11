@@ -7,6 +7,13 @@ textarea,
     padding: 10px;
 }
 
+label.error {
+    font-size: 12px;
+    color: #FFBABA;
+    text-shadow: 0 0 1px #000;
+    display: block;
+}
+
 input,
 textarea {
     background: #fff;

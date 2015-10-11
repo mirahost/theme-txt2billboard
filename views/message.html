@@ -33,9 +33,9 @@
             </div>
             <form action="#" id="sendMessage" method="POST">
                 <fieldset>
-                    <input type="text" placeholder="Name" name="name">
-                    <input type="text" placeholder="Phone" name="phone">
-                    <input type="text" placeholder="Email" name="email">
+                    <input type="text" data-rule-minlength="3" class="required" placeholder="Name" name="name">
+                    <input type="text" class="required" placeholder="Phone" name="phone">
+                    <input type="text" class="required email" placeholder="Email" name="email">
                 </fieldset>
                 <fieldset>
                     <select name="location">
@@ -43,10 +43,19 @@
                         <option value="1">New York</option>
                         <option value="2">Hawaii</option>
                     </select>
-                    <textarea name="message" rows="6" placeholder="Message"></textarea>
+                    <textarea class="required" name="message" data-rule-minlength="10" data-rule-maxlength="200" rows="6" placeholder="Message"></textarea>
                 </fieldset>
                 <button type="submit" class="btn primary alignright">Send</button>
             </form>
+
+            <div class="formMeta">
+                <div class="success">
+                    <p>Your form was sent!</p>
+                </div>
+                <div class="fail">
+                    <p>There was an error. Please try again later!</p>
+                </div>
+            </div>
 
         </div>
 

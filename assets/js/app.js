@@ -29,4 +29,32 @@ WebFontConfig = {
 
     });
 
+    // jQuery ajax form
+    var $form = $('#sendMessage');
+    var $formMeta = $('.formMeta');
+    var $success = $('.success', $formMeta);
+    var $fail = $('.fail', $formMeta);
+
+    $form.validate({
+        submitHandler : function(){
+            $.ajax({
+                url: $form.attr('action'),
+                type: $form.attr('method'),
+            })
+            .success(function() {
+                $form.fadeOut(function(){
+                    $success.fadeIn();
+                })
+            })
+            .fail(function() {
+                $form.fadeOut(function(){
+                    $fail.fadeIn();
+                })
+            });
+
+            return false;
+        }
+    })
+
+
 })(jQuery);
