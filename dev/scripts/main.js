@@ -28,6 +28,7 @@
             $.ajax({
                 url: $form.attr('action'),
                 type: $form.attr('method'),
+                data: $form.serialize()
             })
             .success(function() {
                 $form.fadeOut(function(){
