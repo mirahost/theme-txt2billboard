@@ -237,7 +237,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -446,8 +447,7 @@ nav ul {
       border-radius: 5px;
       padding: 8px 20px;
       display: block; }
-      #primaryHeader nav a:hover,
-      #primaryHeader nav a.active {
+      #primaryHeader nav a:hover, #primaryHeader nav a.active {
         background: #00b89e; }
   #primaryHeader .navIcon {
     float: right;
@@ -473,8 +473,7 @@ nav ul {
     float: none; }
     #primaryHeader .sideMeta nav li {
       display: block; }
-    #primaryHeader .sideMeta nav a:hover,
-    #primaryHeader .sideMeta nav a.active {
+    #primaryHeader .sideMeta nav a:hover, #primaryHeader .sideMeta nav a.active {
       background: #264667; }
 
 @media (max-width: 767px) {
@@ -483,7 +482,6 @@ nav ul {
     border-bottom: 0; }
     #primaryHeader .inner > nav {
       display: none; } }
-
 #primaryFooter {
   border-top: 4px solid #00b89e;
   background-color: #264667;
@@ -514,7 +512,6 @@ nav ul {
     #primaryFooter .copyright {
       float: none;
       padding: 15px 0; } }
-
 .sidebar {
   width: 28%;
   float: left;
@@ -555,13 +552,11 @@ nav ul {
 @media (max-width: 992px) {
   .sidebar {
     width: 34%; } }
-
 @media (max-width: 767px) {
   .sidebar {
     width: 100%;
     clear: both;
     float: none; } }
-
 select,
 input,
 textarea,
@@ -643,7 +638,8 @@ body {
   color: #fff;
   font-family: "Roboto", sans-serif; }
   #motto h1 {
-    font-weight: 700; }
+    font-weight: 700;
+    margin-bottom: 10px; }
   #motto .btn {
     margin-top: 15px; }
 
@@ -653,6 +649,7 @@ body {
 @media (max-width: 767px) {
   .mobile-only {
     display: block !important; }
+
   body {
     /* fallback/image non-cover color */
     background-color: #3c4e72;
@@ -666,10 +663,10 @@ body {
     background-image: -o-linear-gradient(#3c4e72, #264667);
     color: #fff;
     border-top: 0; }
+
   .inner {
     padding-right: 2%;
     padding-left: 2%; } }
-
 .contentPage #primaryHeader {
   background-image: url(../img/header_content.jpg); }
 
@@ -693,13 +690,11 @@ body {
 @media (max-width: 992px) {
   .mainArea {
     width: 63%; } }
-
 @media (max-width: 767px) {
   .mainArea {
     width: 100%;
     color: #fff;
     padding: 0 5%; } }
-
 .messagePage {
   /* fallback/image non-cover color */
   background-color: #3c4e72;
