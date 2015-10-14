@@ -54,7 +54,7 @@ gulp.task('js-deploy', function(){
     return gulp.src( scripts )
                 .pipe( concat( 'app.js' ) )
                 .pipe( uglify().on('error', util.log ) )
-                .pipe( gulp.dest( path_dist.js ) );
+                .pipe( gulp.dest( path.js.dest ) );
 });
 
 gulp.task('scss-deploy', function(){
@@ -62,7 +62,17 @@ gulp.task('scss-deploy', function(){
                 .pipe( sass({
                     outputStyle : 'compressed'
                 }).on('error', sass.logError) )
-                .pipe( gulp.dest( path_dist.scss ) );
+                .pipe( gulp.dest( path.scss.dest ) );
+});
+
+gulp.task('fonts-move', function(){
+    return gulp.src( dev_folder + '/fonts/**/*' )
+                .pipe( gulp.dest( dist_folder + '/fonts' ) );
+});
+
+gulp.task('img-move', function(){
+    return gulp.src( dev_folder + '/img/**/*' )
+                .pipe( gulp.dest( dist_folder + '/img' ) );
 });
 
 gulp.task('pages', function(){
@@ -75,9 +85,9 @@ gulp.task('clean', function(cb){
     rimraf( dist_folder, cb );
 });
 
-gulp.task('deploy', ['clean', 'scss-deploy', 'js-deploy']);
+gulp.task('deploy', ['clean', 'fonts-move', 'img-move', 'scss-deploy', 'js-deploy']);
 
-gulp.task('watch', ['connect', 'scss', 'js'], function(){
+gulp.task('watch', ['connect', 'scss', 'js', 'fonts-move'], function(){
     gulp.watch( path.js.src, ['js'] );
     gulp.watch( path.scss.src, ['scss'] );
 });
