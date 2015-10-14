@@ -33,7 +33,7 @@
 
         #motto {
             width: 80%;
-            margin: 0 auto;
+            margin: 0 auto 50px;
             display: block;
 
             .btn {
@@ -42,12 +42,12 @@
 
             + img {
                 float: left;
-                width: 55%;
+                width: 43%;
             }
         }
 
         .mobileContact {
-            width: 45%;
+            width: 56%;
             float: right;
             text-align: center;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);

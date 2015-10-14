@@ -41,6 +41,10 @@
 
 #identity {
     float: left;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 #primaryHeader .sideMeta {
@@ -73,6 +77,10 @@
 }
 
 @include respond-from(small) {
+    #identity {
+        width: 80%;
+    }
+
     #primaryHeader {
         background: transparent !important;
         border-bottom: 0;
